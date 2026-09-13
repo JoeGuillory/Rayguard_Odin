@@ -20,10 +20,9 @@ game_update :: proc(game: ^Game)
 		game.should_close = true
 	}
 	rl.BeginDrawing()
-	rl.ClearBackground(rl.BLUE)
+	rl.ClearBackground(rl.WHITE)
 
-
-
+	
 
 	rl.EndDrawing()
 }
