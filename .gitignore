@@ -1,0 +1,5 @@
+#Git ignore for Rayguard
+
+.zed/
+*.sh
+Build/
