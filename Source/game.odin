@@ -1,11 +1,20 @@
 package main
 
+import "base:intrinsics"
 import rl "vendor:raylib"
+
+Player :: struct
+{
+	score : i32,
+	health : f32,
+}
 
 Game :: struct
 {
-	should_close : bool
+	should_close : bool,
+	player : Player
 }
+
 
 game_start :: proc(game : ^Game)
 {
@@ -21,8 +30,6 @@ game_update :: proc(game: ^Game)
 	}
 	rl.BeginDrawing()
 	rl.ClearBackground(rl.WHITE)
-
-	
 
 	rl.EndDrawing()
 }
