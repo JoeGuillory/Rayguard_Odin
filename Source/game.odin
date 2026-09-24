@@ -9,10 +9,17 @@ Player :: struct
 	health : f32,
 }
 
+create_player :: proc(health : f32) ->Player
+{
+	return Player{0, health}
+
+}
+
+
 Game :: struct
 {
 	should_close : bool,
-	player : Player
+	player :Player
 }
 
 
