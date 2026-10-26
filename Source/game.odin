@@ -1,6 +1,5 @@
 package main
 
-import "base:intrinsics"
 import rl "vendor:raylib"
 
 Player :: struct
@@ -12,7 +11,6 @@ Player :: struct
 create_player :: proc(health : f32) ->Player
 {
 	return Player{0, health}
-
 }
 
 
